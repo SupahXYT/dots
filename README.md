@@ -1,2 +1,2 @@
 # dots
-dwm + st build with dot files
+dwm + st + dmenu build with dot files

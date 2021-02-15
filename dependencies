@@ -1,0 +1,27 @@
+Here are the minimal amount of x dependencies needed:
+x11-libs/libX11
+x11-base/xorg-server
+x11-apps/xinit
+x11-libs/libXrandr
+x11-libs/libxft
+x11-apps/xrandr
+
+Other optional stuff:
+Feh - Wallpapers
+Compton - Transparency
+x11-libs/libXinerama - Multiple monitors
+x11-misc/unclutter - Hide mouse after 3 seconds of idle
+libxft - fancy unicode
+x11-misc/xclip - Terminal clipboard
+I don't use xsetroot because I have dwmstatus already.
+
+# Sound 
+media-sound/alsa-utils
+idk, I need to do some research to find a minimal but easy to use setup
+
+# File manager
+lf - cli based file manager
+
+# Font 
+jetbrains-mono - yep
+
