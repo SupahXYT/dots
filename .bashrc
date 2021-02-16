@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
-# Don't put duplicate lines in the history.
+# Don't put duplicate lines in history.
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 
 # Different file for aliases
