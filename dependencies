@@ -7,12 +7,11 @@ x11-libs/libxft
 x11-apps/xrandr
 
 Other optional stuff:
-Feh - Wallpapers
-Compton - Transparency
+hsetroot - wallpapers
+Compton - Transparency (looking for a less bloated alterantive, compton uses ~40MiB of RAM).
 x11-libs/libXinerama - Multiple monitors
-x11-misc/unclutter - Hide mouse after 3 seconds of idle
+x11-misc/unclutter - Hide mouse after 3 seconds of idle (will replace with a dwm patch later).
 libxft - fancy unicode
-x11-misc/xclip - Terminal clipboard
 I don't use xsetroot because I have dwmstatus already.
 
 # Sound 
