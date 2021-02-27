@@ -7,19 +7,19 @@ x11-libs/libxft
 x11-apps/xrandr
 
 Other optional stuff:
-hsetroot - wallpapers
-Compton - Transparency (looking for a less bloated alterantive, compton uses ~40MiB of RAM).
+hsetroot - wallpapers (I think this is the least bloated program but I may be wrong)
+xcompmgr - transparency (anything else is bloat!)
 x11-libs/libXinerama - Multiple monitors
 x11-misc/unclutter - Hide mouse after 3 seconds of idle (will replace with a dwm patch later).
 libxft - fancy unicode
-I don't use xsetroot because I have dwmstatus already.
+I don't use xsetroot because I have dwmstatus already (no more bash script bloat!)
 
 # Sound 
 media-sound/alsa-utils
 idk, I need to do some research to find a minimal but easy to use setup
 
 # File manager
-lf - cli based file manager
+lf - cli based file manager (though I don't really use)
 
 # Font 
 jetbrains-mono - yep
