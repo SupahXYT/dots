@@ -16,8 +16,17 @@ export PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[36m\]
 alias df='df -h'
 alias du='du -h'
 
-# Misc 
- alias grep='grep --color'                     # show differences in colour
- alias egrep='egrep --color=auto'              # show differences in colour
- alias fgrep='fgrep --color=auto'              # show differences in colour
+# Functions
+
+ddg ()
+{
+	QUERY="$@"
+	links duckduckgo.com/?q="${QUERY}"
+}
+
+google ()
+{
+	QUERY="$@"
+	links google.com/search?q="${QUERY}"
+}
 
