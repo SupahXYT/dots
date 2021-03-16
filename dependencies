@@ -9,7 +9,6 @@ x11-apps/xrandr
 Other optional stuff:
 hsetroot - wallpapers (I think this is the least bloated program but I may be wrong)
 xcompmgr - transparency (anything else is bloat!)
-x11-libs/libXinerama - Multiple monitors
 x11-misc/unclutter - Hide mouse after 3 seconds of idle (will replace with a dwm patch later).
 libxft - fancy unicode
 I don't use xsetroot because I have dwmstatus already (no more bash script bloat!)

@@ -197,6 +197,7 @@ main(void)
 {
 	char *status;
 	char *tmpst;
+	char *temp
 
 	if (!(dpy = XOpenDisplay(NULL))) {
 		fprintf(stderr, "dwmstatus: cannot open display.\n");
@@ -204,6 +205,7 @@ main(void)
 	}
 
 	for (;;sleep(1)) {
+		temp = gettemperature("/proc", "intel_x86_64");
 		tmpst = mktimes("%H:%M %a %b %d", tzpst);
 
 		status = smprintf("%s ", tmpst);
