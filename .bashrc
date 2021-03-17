@@ -9,7 +9,11 @@ export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
    source "${HOME}/.bash_aliases"
  fi
 
-# Colors
+set -o vi
+
+# Enviornmental variable
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/supahx/go/bin"
+export BROWSER="firefox"
 export PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
 
 # Default to human readable figures
@@ -21,12 +25,12 @@ alias du='du -h'
 ddg ()
 {
 	QUERY="$@"
-	links duckduckgo.com/?q="${QUERY}"
+	links https://duckduckgo.com/?q="${QUERY}"
 }
 
 google ()
 {
 	QUERY="$@"
-	links google.com/search?q="${QUERY}"
+	links https://google.com/search?q="${QUERY}"
 }
 

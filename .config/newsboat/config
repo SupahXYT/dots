@@ -1,0 +1,1 @@
+macro y set browser mpv ; open-in-browser ; set browser firefox
