@@ -1,5 +1,4 @@
 alias ls="ls --color"
-alias sl="ls"
 alias l="ls"
 alias ll="ls -lh"
 alias la="ls -A"
@@ -11,7 +10,6 @@ alias cleat="clear"
 alias ckear="clear"
 
 alias tms="transmission-remote"
-
 alias p="sudo pacman"
 
 alias yt="ytfzf"

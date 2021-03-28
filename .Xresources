@@ -1,4 +1,4 @@
-# st/dwm/dmenu doesn't actually access Xresources (I think it's unnecessary), I edit the source code and change colors there. This is merely a place such that I can "define" my colorscheme.
+# st/dwm/dmenu doesn't actually access Xresources (I think it's unnecessary), I edit the source code and change colors there. This is just a place where I can define my colorscheme.
 
 ! special
 *.foreground:   #c0c5ce

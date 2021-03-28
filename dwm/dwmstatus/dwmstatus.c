@@ -213,6 +213,7 @@ main(void)
 
 		free(tmpst);
 		free(status);
+		free(bat);
 	}
 
 	XCloseDisplay(dpy);

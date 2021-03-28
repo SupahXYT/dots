@@ -1,26 +1,28 @@
 Here are the minimal amount of x dependencies needed:
-x11-libs/libX11
-x11-base/xorg-server
-x11-apps/xinit
-x11-libs/libXrandr
-x11-libs/libxft
-x11-apps/xrandr
+libx11
+libxinerama
+libxrandr
+libxft
+xorg-server
+xorg-xinit
+xorg-xrandr
 
 Other optional stuff:
 hsetroot - wallpapers (I think this is the least bloated program but I may be wrong)
 xcompmgr - transparency (anything else is bloat!)
-x11-libs/libXinerama - Multiple monitors
-x11-misc/unclutter - Hide mouse after 3 seconds of idle (will replace with a dwm patch later).
-libxft - fancy unicode
-I don't use xsetroot because I have dwmstatus already (no more bash script bloat!)
+unclutter - Hide mouse after 3 seconds of idle (might replace with a dwm patch but unclutter is such a small program it almost doesn't matter)
 
 # Sound 
-media-sound/alsa-utils
-idk, I need to do some research to find a minimal but easy to use setup
+alsa-lib
+alsa-utils
+I think firefox installs pulseaudio anyways so it doesn't matter
 
 # File manager
-lf - cli based file manager (though I don't really use)
+lf - cli based file manager (useful for playing media with mpv)
 
 # Font 
-jetbrains-mono - yep
+ttf-jetbrains-mono - might retire this one I'm tired of looking at it
+gnu-free-fonts - I needed something with unicode support
+ttf-adobe-source-han-sans-jp-fonts - to render moon ruins properly 
+ttf-adobe-source-han-sans-cn-fonts - for chinese (not like it makes a difference to me but I don't like having a bunch blocks when I'm on bilibili)
 
