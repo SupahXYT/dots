@@ -2,7 +2,7 @@
 [[ "$-" != *i* ]] && return
 
 # Don't put duplicate lines in history.
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+export HISTCONTROL=ignoreboth:ignoredups
 
 # Different file for aliases
  if [ -f "${HOME}/.bash_aliases" ]; then
