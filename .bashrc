@@ -9,12 +9,20 @@ export HISTCONTROL=ignoreboth:ignoredups
    source "${HOME}/.bash_aliases"
  fi
 
-# set -o vi
+# Localize in english (this might be better off in /etc/profile)
+export LANG="en_US.UTF-8"
+export LC_COLLATE="C"
+export LC_CTYPE="en_US.UTF-8"
 
-# Enviornmental variable
+# Input
+set -o vi
+bind -m vi-insert "\C-l":clear-screen
+
+# Enviornmental variables
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/supahx/go/bin"
-export BROWSER="librewolf"
+# export BROWSER="librewolf"
 export EDITOR="vim"
+# export PS1="\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] "
 # export PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
 
 alias df='df -h'
@@ -31,10 +39,19 @@ alias clae="clear"
 alias cleat="clear"
 alias ckear="clear"
 
+<<TRANSMISSION
 alias tms="transmission-remote"
+alias tmss="transmission-remote -w /var/lib/transmission/downloads/shows -a"
+alias tmsb="transmission-remote -w /var/lib/transmission/downloads/books -a"
+alias tmsa="transmission-remote -w /var/lib/transmission/downloads/music -a"
+alias tmsp="transmission-remote -w /var/lib/transmission/downloads/pictures -a"
+alias tmsw="transmission-remote -w /var/lib/transmission/downloads/rss -a"
+alias tmsm="transmission-remote -w /var/lib/transmission/downloads/movies -a"
+TRANSMISSION
+
 alias p="sudo pacman"
 
 alias yt="ytfzf"
 alias ytd="youtube-dl"
 
-alias ani="lf /var/lib/transmission/downloads"
+alias ani="lf /media"

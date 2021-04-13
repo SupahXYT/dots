@@ -1,0 +1,12 @@
+# fuck you
+
+control + F6
+    brightness -l
+control + F7 
+    brightness -h
+control + shift + F6 
+    brightness --min
+control + shift + F7 
+    brightness --max
+control + shift + P
+    scrot -e 'mv $f $$HOME/pictures'

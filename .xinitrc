@@ -1,8 +1,7 @@
 unclutter -idle 3 &
-/bin/dwmstatus &
-# /usr/local/bin/comp
-# hsetroot -fill ~/git/dots/doge.jpg
-# xrandr --output eDP-1 --brightness 0.4
-export LANG="en_US.UTF-8"
+statusdwm &
+hsetroot -fill ~/git/dots/doge.jpg
+picom &
+# sudo su -c "echo 0 > /sys/class/backlight/intel_backlight/brightness"
 exec dwm > ~/.dwm.log
 

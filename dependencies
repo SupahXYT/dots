@@ -9,20 +9,17 @@ xorg-xrandr
 
 Other optional stuff:
 hsetroot - wallpapers (I think this is the least bloated program but I may be wrong)
-xcompmgr - transparency (anything else is bloat!)
-unclutter - Hide mouse after 3 seconds of idle (might replace with a dwm patch but unclutter is such a small program it almost doesn't matter)
-
-# Sound 
-alsa-lib
-alsa-utils
-I think firefox installs pulseaudio anyways so it doesn't matter
+picom - composite manager (using xcompmgr is meme-level)
+unclutter - Hide mouse when idle 
+zbar - qr code reader
+qrencode - qr encoder
 
 # File manager
 lf - cli based file manager (useful for playing media with mpv)
 
 # Font 
 ttf-jetbrains-mono - might retire this one I'm tired of looking at it
-gnu-free-fonts - I needed something with unicode support
+ttf-mplus
+ttf-sybola
 ttf-adobe-source-han-sans-jp-fonts - to render moon ruins properly 
-ttf-adobe-source-han-sans-cn-fonts - for chinese (not like it makes a difference to me but I don't like having a bunch blocks when I'm on bilibili)
 

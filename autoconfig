@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Automatically installs .config files. Everything else is to be done manually.
+
+rm -r $HOME/.config/htop
+ln -s $HOME/git/dots/.config/htop $HOME/.config/htop
+
+rm -r $HOME/.config/mpv
+ln -s $HOME/git/dots/.config/mpv $HOME/.config/mpv
+
+rm -r $HOME/.config/neofetch
+ln -s $HOME/git/dots/.config/neofetch $HOME/.config/neofetch
+
+rm -r $HOME/.config/newsboat
+ln -s $HOME/git/dots/.config/newsboat $HOME/.config/newsboat
+
+rm -r $HOME/.config/zathura
+ln -s $HOME/git/dots/.config/zathura $HOME/.config/zathura
+
+rm -r $HOME/.config/sxhkd
+ln -s $HOME/git/dots/.config/sxhkd $HOME/.config/sxhkd
+
