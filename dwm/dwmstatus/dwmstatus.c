@@ -204,17 +204,17 @@ main(void)
 		return 1;
 	}
 
-	for (;;sleep(1)) {
 		bat = getbattery("/sys/class/power_supply/BAT0");
 		tmpst = mktimes("%H:%M %a %b %d", tzpst);
 
-		status = smprintf("BAT: %s %s ", bat, tmpst);
-		setstatus(status);
+		status = smprintf("%s | %s ", tmpst, bat);
+		/*setstatus(status);*/
+
+		printf("%s\n", status);
 
 		free(tmpst);
 		free(status);
 		free(bat);
-	}
 
 	XCloseDisplay(dpy);
 
