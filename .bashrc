@@ -19,7 +19,6 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 # Enviornmental variables
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/supahx/go/bin"
 # export BROWSER="librewolf"
 export EDITOR="vim"
 # export PS1="\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] "
