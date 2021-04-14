@@ -1,22 +1,28 @@
 #!/bin/sh
 
 # Automatically installs .config files. Everything else is to be done manually.
+# Make sure this repo is the current working directory or else it wont work.
 
 rm -r $HOME/.config/htop
-ln -s $HOME/git/dots/.config/htop $HOME/.config/htop
+ln -s $PWD/.config/htop $HOME/.config/htop
 
 rm -r $HOME/.config/mpv
-ln -s $HOME/git/dots/.config/mpv $HOME/.config/mpv
+ln -s $PWD/.config/mpv $HOME/.config/mpv
 
 rm -r $HOME/.config/neofetch
-ln -s $HOME/git/dots/.config/neofetch $HOME/.config/neofetch
+ln -s $PWD/.config/neofetch $HOME/.config/neofetch
 
 rm -r $HOME/.config/newsboat
-ln -s $HOME/git/dots/.config/newsboat $HOME/.config/newsboat
+ln -s $PWD/.config/newsboat $HOME/.config/newsboat
 
 rm -r $HOME/.config/zathura
-ln -s $HOME/git/dots/.config/zathura $HOME/.config/zathura
+ln -s $PWD/.config/zathura $HOME/.config/zathura
 
 rm -r $HOME/.config/sxhkd
-ln -s $HOME/git/dots/.config/sxhkd $HOME/.config/sxhkd
+ln -s $PWD/.config/sxhkd $HOME/.config/sxhkd
 
+rm -r $HOME/.config/picom
+ln -s $PWD/.config/picom/picom.conf $HOME/.config/picom/
+
+sudo rm /usr/local/bin/signalstrength
+sudo ln -s $PWD/dwm/dwmstatus/signalstrength /usr/local/bin

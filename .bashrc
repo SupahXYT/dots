@@ -24,6 +24,11 @@ export EDITOR="vim"
 # export PS1="\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] "
 # export PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
 
+mkcd()
+{
+	mkdir $1 && cd $1
+}
+
 alias df='df -h'
 alias du='du -h'
 
