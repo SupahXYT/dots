@@ -25,4 +25,11 @@ rm -r $HOME/.config/picom
 ln -s $PWD/.config/picom/picom.conf $HOME/.config/picom/
 
 sudo rm /usr/local/bin/signalstrength
-sudo ln -s $PWD/dwm/dwmstatus/signalstrength /usr/local/bin
+sudo cp $PWD/status.sh /usr/local/bin
+
+# Additional configuration for laptop computers
+laptop()
+{
+	rm -r
+	ln -s 
+}

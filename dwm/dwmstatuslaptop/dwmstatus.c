@@ -177,8 +177,10 @@ getbattery(char *base)
 
 	if (remcap < 0 || descap < 0)
 		return smprintf("invalid");
+	co = smprintf("%.0f < yep ", ((float)remcap / (float)descap) * 100);
+	printf(co);
 
-	return smprintf("%.0f%%%c", ((float)remcap / (float)descap) * 100, status);
+	return smprintf("%.0f%%%s", ((float)remcap / (float)descap) * 100, " ");
 }
 
 char *
@@ -206,7 +208,8 @@ main(void)
 		tmpst = mktimes("%H:%M %a %b %d", tzpst);
 
 		status = smprintf("| %s ", tmpst);
-//		setstatus(status);
+		/*setstatus(status);*/
+
 		printf("%s\n", status);
 
 		free(tmpst);
