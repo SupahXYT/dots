@@ -22,9 +22,9 @@ rm -r $HOME/.config/sxhkd
 ln -s $PWD/.config/sxhkd $HOME/.config/sxhkd
 
 rm -r $HOME/.config/picom
-ln -s $PWD/.config/picom/picom.conf $HOME/.config/picom/
+ln -s $PWD/.config/picom $HOME/.config/picom
 
-sudo rm /usr/local/bin/signalstrength
+sudo rm /usr/local/bin/status.sh
 sudo cp $PWD/status.sh /usr/local/bin
 
 # Additional configuration for laptop computers
