@@ -41,7 +41,7 @@ alias ll="ls -lAh"
 alias la="ls -A"
 
 <<TRANSMISSION
-alias tms="transmission-remote"
+alias tms="transmission-remote -w /var/lib/transmission/downloads"
 alias tmss="transmission-remote -w /var/lib/transmission/downloads/shows -a"
 alias tmsb="transmission-remote -w /var/lib/transmission/downloads/books -a"
 alias tmsa="transmission-remote -w /var/lib/transmission/downloads/audio -a"

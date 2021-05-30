@@ -27,6 +27,9 @@ ln -s $PWD/.config/picom $HOME/.config/picom
 sudo rm /usr/local/bin/status.sh
 sudo cp $PWD/status.sh /usr/local/bin
 
+rm -r $HOME/.config/rclone
+ln -s $PWD/.config $HOME/.config/rclone
+
 # Additional configuration for laptop computers
 laptop()
 {

@@ -10,3 +10,5 @@ control + shift + F7
     brightness --max
 control + shift + P
     scrot -e 'mv $f $$HOME/pictures/screenshots'
+super + a
+	st -e lf /var/lib/transmission/downloads/
