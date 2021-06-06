@@ -14,7 +14,7 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# Localize in english (this might be better off in /etc/profile)
+# Localization (this might be better off in /etc/profile)
 export LANG="en_US.UTF-8"
 
 # Input
@@ -22,6 +22,7 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 # Enviornmental variables
+# RCLONE_CONFIG_PASS="$(pass rclone/config)"
 # export BROWSER="librewolf"
 export EDITOR="nvim"
 # export PS1="\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] "
@@ -32,10 +33,20 @@ mkcd()
 	mkdir $1 && cd $1
 }
 
+# colors 
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# aliases 
 alias df='df -h'
 alias du='du -h'
 
-alias ls="ls --color"
 alias l="ls"
 alias ll="ls -lAh"
 alias la="ls -A"
@@ -57,3 +68,5 @@ alias yt="ytfzf"
 alias ytd="youtube-dl"
 
 alias ani="lf /media"
+alias sxmpv="sxiv ~/pictures/mpv_screenshots"
+alias rclone="rclone --ask-password=false"
