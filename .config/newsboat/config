@@ -1,1 +1,7 @@
 macro y set browser mpv ; open-in-browser ; set browser firefox
+auto-reload yes
+bind-key h quit
+bind-key j down
+bind-key k up
+bind-key l open
+

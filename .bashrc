@@ -32,6 +32,10 @@ mkcd()
 {
 	mkdir $1 && cd $1
 }
+rstart()
+{
+        export RCLONE_CONFIG_PASS="$(pass rclone/config)"
+}
 
 # colors 
 if [ -x /usr/bin/dircolors ]; then
