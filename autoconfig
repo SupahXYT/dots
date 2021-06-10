@@ -3,6 +3,12 @@
 # Automatically installs .config files. Everything else is to be done manually.
 # Make sure this repo is the current working directory or else it wont work.
 
+rm $HOME/.Xresources
+cp $PWD/.Xresources $HOME
+
+rm $HOME/.xinitrc
+cp $PWD/.xinitrc $HOME
+
 rm -r $HOME/.config/htop
 ln -s $PWD/.config/htop $HOME/.config/htop
 
@@ -28,7 +34,7 @@ sudo rm /usr/local/bin/status.sh
 sudo cp $PWD/status.sh /usr/local/bin
 
 rm -r $HOME/.config/rclone
-ln -s $PWD/.config $HOME/.config/rclone
+ln -s $PWD/.config/rclone $HOME/.config/rclone
 
 # Additional configuration for laptop computers
 laptop()
