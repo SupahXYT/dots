@@ -1,4 +1,4 @@
-macro y set browser mpv ; open-in-browser ; set browser firefox
+macro y set browser mpv ; open-in-browser ; set browser librewolf
 auto-reload yes
 bind-key h quit
 bind-key j down

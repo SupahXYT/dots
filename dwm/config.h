@@ -13,7 +13,7 @@ static const char col_gray2[]       = "#2b303b";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#de935f"; /* Variable name does not reflect true color */
-static const unsigned int baralpha = 0xd0;
+static const unsigned int baralpha = 0xda;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -36,6 +36,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "lxappearance",     NULL,       NULL,       0,            1,           -1 },
+	{ "connman-gtk",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
