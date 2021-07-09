@@ -11,9 +11,7 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
+# update the values of LINES and COLUMNS.  shopt -s checkwinsize 
 # Localization (this might be better off in /etc/profile)
 export LANG="en_US.UTF-8"
 
@@ -27,6 +25,9 @@ bind -m vi-insert "\C-l":clear-screen
 export EDITOR="nvim"
 # export PS1="\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] "
 # export PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
+
+# This one is my favorite 
+# export PS1="\[\e[0;94m\]┌──\[\e[0;1;94m\](\[\e[0;1;31m\]\u\[\e[0;1;31m\]@\[\e[0;1;31m\]\H\[\e[0;1;94m\])\[\e[0;94m\]─\[\e[0;94m\][\[\e[0;1m\]\w\[\e[0;94m\]]\n\[\e[0;94m\]└─\[\e[0;1;31m\]\$ \[\e[0m\]"
 
 mkcd()
 {
@@ -58,7 +59,7 @@ alias la="ls -A"
 <<TRANSMISSION
 alias tms="transmission-remote -w /var/lib/transmission/downloads"
 alias tmss="transmission-remote -w /var/lib/transmission/downloads/shows -a"
-alias tmsb="transmission-remote -w /var/lib/transmission/downloads/books -a"
+alias tmsl="transmission-remote -w /var/lib/transmission/downloads/literature -a"
 alias tmsa="transmission-remote -w /var/lib/transmission/downloads/audio -a"
 alias tmsp="transmission-remote -w /var/lib/transmission/downloads/pictures -a"
 alias tmsr="transmission-remote -w /var/lib/transmission/downloads/rss -a"

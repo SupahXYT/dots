@@ -19,6 +19,7 @@ lf - cli based file manager (useful for playing media with mpv)
 
 # Font 
 ttf-jetbrains-mono - might retire this one I'm tired of looking at it
+ttf-hack - replace above
 ttf-mplus
 ttf-sybola
 ttf-adobe-source-han-sans-jp-fonts - to render moon ruins properly 

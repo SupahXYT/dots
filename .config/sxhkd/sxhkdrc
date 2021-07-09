@@ -1,6 +1,6 @@
 # fuck you
 
 control + shift + P
-    scrot -e 'mv $f $$HOME/pictures/screenshots'
+    scrot -e 'mv $f $$HOME/Pictures/screenshots'
 super + a
 	st -e lf /var/lib/transmission/downloads/
